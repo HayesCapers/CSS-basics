@@ -24,10 +24,22 @@
 			font-size: 12px;
 		}
 
-		.search-bar{
-			display: inline;
+		.form-inline .form-control{
+			width: 300px;
+			vertical-align: top;
 		}
 		
+		.sub-search li{
+			display: inline-block;
+			padding-right: 20px;
+			padding-left: 20px;
+			margin-top: 10px;
+			border-left: 1px solid #cacaca
+		}
+
+		.sub-search li:first-child{
+			border-left: 0px;
+		}
 		
 	</style>
 
@@ -45,17 +57,26 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-			<div class="row">
+			<div class="row search">
 				<form class="form-inline">
 					<div class="form-group">
 						<input type="text" class="form-control search-bar" placeholder="Go Bro Yourself">
-						<button class="btn btn-default search-bar" type="submit">Search</button>
+						<button class="btn btn-default" type="submit">Search</button>
 					</div>
 				</form>	
 			</div>
+			<div class="row sub-search">
+				<ol>
+					<li>Home</li>
+					<li>Videos</li>
+					<li>Channels</li>
+				</ol>
+			</div>
 		</div>
 		<div class="col-md-3">
-			Right!
+			<div class="row sign-in">
+				
+			</div>
 		</div>
 	</div>
 </div>
