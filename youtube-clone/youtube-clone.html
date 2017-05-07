@@ -12,6 +12,10 @@
 			margin-top: 20px;
 		}
 
+		.header{
+			border-bottom: 1px solid #cacaca;
+		}
+
 		.logo{
 			background: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflNVER5Q.webp");
 			background-position: -178px -227px;
@@ -22,6 +26,10 @@
 
 		.logo-text{
 			font-size: 12px;
+		}
+
+		.logo-container{
+			margin-top: 10px
 		}
 
 		.form-inline .form-control{
@@ -40,15 +48,56 @@
 		.sub-search li:first-child{
 			border-left: 0px;
 		}
+
+		.sign-in{
+			text-align: center;
+			margin-bottom: 17px
+		}
+
+		.sub-sign-in li{
+			display: inline-block;
+			padding-right: 10px;
+			padding-left: 15px;
+			margin-top: 10px;
+			text-align: left;
+			font-size: 12px
+		}
+
+		.sub-sign-in ol{
+			padding-left: 0px;
+		}
+
+		.content-container{
+			background-color: #afd4fc;
+			margin-top: 10px;
+			padding-bottom: 10px
+		}
+
+		.content-container h4{
+			margin-left: 10px;
+		}
+
+		.suggested-video{
+			margin-left: 15px;
+			margin-top: 15px;
+			display: inline-block;
+		}
 		
+		.suggested-video-text{
+			font-size: 10px;
+			display: inline-block;
+			width: 147px;
+			vertical-align: middle;
+		}
 	</style>
 
 </head>
 <body>
 
 <div class="container">
+	<!-- Nav-bar -->
 	<div class="row header">
-		<div class="col-md-3">
+		<div class="col-md-3 logo-container">
 			<div class="col-md-12 logo">
 				
 			</div>
@@ -75,9 +124,51 @@
 		</div>
 		<div class="col-md-3">
 			<div class="row sign-in">
-				
+				Create Account or Sign in 
+			</div>
+			<div class="row sub-sign-in">
+				<ol>
+					<li>Subscriptions</li>
+					<li>History</li>
+					<li>Upload</li>
+				</ol>
 			</div>
 		</div>
+	</div>
+	<!-- content section -->
+	<div class="col-md-9 content-container">
+		<div class="row">
+			<h4>Featured</h4>
+		</div>
+		<div class="col-md-7">
+			<img src="http://placehold.it/400x300">
+		</div>
+		<div class="col-md-5">
+			<div class="row suggested-video">
+				<img src="http://placehold.it/100x80">
+				<div class="suggested-video-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut.
+				</div>
+			</div>
+			<div class="row suggested-video">
+				<img src="http://placehold.it/100x80">
+				<div class="suggested-video-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut.
+				</div>
+			</div>
+			<div class="row suggested-video">
+				<img src="http://placehold.it/100x80">
+				<div class="suggested-video-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		
 	</div>
 </div>
 
